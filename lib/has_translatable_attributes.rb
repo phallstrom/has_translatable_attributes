@@ -1,5 +1,4 @@
 require "has_translatable_attributes/version"
-require "has_translatable_attributes/action_view_helper"
 
 module HasTranslatableAttributes
 

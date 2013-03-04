@@ -16,6 +16,11 @@ def setup_db
       end
     end
   end
+
+  # We need the table to exist first
+  Widget.class_eval do
+    has_translatable_attributes
+  end
 end
 
 def teardown_db
@@ -27,7 +32,6 @@ def teardown_db
 end
 
 class Widget < ActiveRecord::Base
-  has_translatable_attributes
 end
 
 ################################################################################
