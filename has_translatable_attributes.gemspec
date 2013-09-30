@@ -11,6 +11,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{Provides convenience methods for setting/getting I18n specific fields.}
   gem.summary       = %q{Provides convenience methods for setting/getting I18n specific fields.}
   gem.homepage      = "https://github.com/phallstrom/has_translatable_attributes"
+  gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
